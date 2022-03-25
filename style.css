@@ -1,0 +1,42 @@
+#diem{
+    text-align: center;
+}
+
+#game{
+    width: 800px;
+    height: 400px;
+    border: 2px solid black;
+    margin: auto;
+    background-image: url("https://images8.alphacoders.com/939/939716.png");
+    background-size: cover;
+
+}
+
+
+#nhanvat{
+    width: 75px;
+    height: 75px;
+    position:relative;
+    top :334px;
+    background-image: url("chim.png");
+    background-size: cover;
+}
+
+#ngoaivat{
+    width: 70px;
+    height: 70px;
+    position:relative;
+    top :275px;
+    left :750px;
+    background-image: url("chuongngaivat.png");
+    background-size: cover;
+    animation: chuongngaivat 1.4s infinite;
+}
+@keyframes chuongngaivat {
+    0%{left: 750px;}
+    100%{left: -50px}
+    
+}
+.jump-animation{
+    animation: jump 0.5s;
+}

@@ -14,7 +14,7 @@ body{
     height: 200px;
 
 }
-.computer img ,
+.computer img,
 .player img {
     width: 75%;
 }
@@ -51,7 +51,7 @@ body{
     outline: none;
     transition: 0.2s all linear;
 }
-.options.button:hover{
+.options button:hover{
     background-color:darkcyan;
     border: 1px solid darkcyan;
 }

@@ -3,30 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 0;
-            margin: 0;
-            height: 100vh;
-            Background: linear-gradient(
-            0deg,
-            rgb(17,51,161)9%,
-            rgb(136,36,214)
-            );
-        }
+    <link rel ="stylesheet" href="./index.css">
 
-    </style>
+
 </head>
 <body>
-<div id="game">
-    <div id="nhanvat"></div>
-    <div id="ngoaivat"></div>
+<div class ="contaniner">
+    <div class="message">Lựa Chọn 1</div>
+    <div class="images">
+        <div class="computer">
+            <img src="damphai.png">
+        </div>
+        <div class="player">
+            <img src="damtrai.png">
+        </div>
+    </div>
+    <div class="points">
+        Computer<span class="computerPoints">0</span>/
+        <span class="playerPoints">0</span>Pla
+    </div>
+    <div class="options">
+        <button type="button" >Stone</button>
+        <button type="button" >Paper</button>
+        <button type="button" >Cisos</button>
+    </div>
 </div>
-<h1 id="diem">0</h1>
-<script src="noidung.js"></script>
+
+
+
+
+
+
+
+<script>
+    const computer =document.querySelector(".computer image");
+    const player =document.querySelector(".player image");
+    const computerPoints =document.querySelector(".computerPoints");
+    const playerPoints =document.querySelector(".playerPointPoints");
+    const options =document.querySelector(".options button") ;
+
+    options.forEach(( options ) => {
+        options.addEventListener('click ',()=>{
+            computer.classList.add(" shakeComputer ");
+            player.classList.add(" shakePlayer ");
+
+            setTimeout(()=>{
+                computer.classList.remove(" shakeComputer ");
+                player.classList.remove(" shakePlayer ")
+            },900);
+        });
+    });
+
+</script>
 </body>
 </html>

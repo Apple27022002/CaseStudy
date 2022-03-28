@@ -12,10 +12,10 @@
     <div class="message">Lựa Chọn 1</div>
     <div class="images">
         <div class="computer">
-            <img src="damphai.png">
+            <img src="Stone1.png">
         </div>
         <div class="player">
-            <img src="damtrai.png">
+            <img src="Stone.png">
         </div>
     </div>
     <div class="points">
@@ -33,7 +33,7 @@
     const computer =document.querySelector(".computer img");
     const player =document.querySelector(".player img");
     const computerPoints =document.querySelector(".computerPoints");
-    const playerPoints =document.querySelector(".playerPointPoints");
+    const playerPoints =document.querySelector(".playerPoints");
     const options =document.querySelectorAll(".options button") ;
 
     options.forEach((option) => {
@@ -42,15 +42,15 @@
             player.classList.add("shakePlayer");
 
             setTimeout(()=>{
-                computer.classList.remove(" shakeComputer ");
-                player.classList.remove(" shakePlayer ");
+                computer.classList.remove("shakeComputer");
+                player.classList.remove("shakePlayer");
 
-                player.scr="./" + option.innerHTML+"Player.png";
+                player.src=option.innerHTML+".png";
 
                 const choice =["Stone","Paper","Cisos"];
                 let arrayNo =Math.floor(Math.random() * 3);
                 let computerChoice = choice[arrayNo];
-                computer.scr ="/."+ computerChoice +"Computer.png";
+                computer.src =computerChoice +"1.png";
 
                 let cPoints =parseInt(computerPoints.innerHTML);
                 let pPoints =parseInt(playerPoints.innerHTML);
@@ -61,7 +61,7 @@
                     else if (computerChoice==="Cisos")
                         playerPoints.innerHTML=pPoints+1;
                 }else if (option.innerHTML==="Paper"){
-                    if (computerChoice===" Cisos")
+                    if (computerChoice==="Cisos")
                         computerPoints.innerHTML=pPoints+1;
                     else if (computerChoice==="Stone")
                         playerPoints.innerHTML=pPoints+1;
@@ -76,6 +76,6 @@
         });
     });
 </script>
-<script !src="index.js"></script>
+<!--<script !src="index.js"></script>-->
 </body>
 </html>

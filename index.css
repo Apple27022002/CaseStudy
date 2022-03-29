@@ -1,9 +1,9 @@
 body{
-    background-color: blueviolet ;
+    background-color: #FF19FF ;
     color: aliceblue ;
 }
 .message{
-    margin: 5em 0 2em;
+    margin: 5em 0 3em;
     text-align: center ;
 }
 .images{
@@ -52,7 +52,7 @@ body{
     transition: 0.2s all linear;
 }
 .options button:hover{
-    background-color:darkcyan;
+    background-color: peachpuff;
     border: 1px solid darkcyan;
 }
 @keyframes shakeComputer {

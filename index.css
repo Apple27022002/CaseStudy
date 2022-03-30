@@ -1,5 +1,5 @@
 body{
-    background-color: #FF19FF ;
+    background-color: #1dff65 ;
     color: aliceblue ;
 }
 .message{
@@ -52,7 +52,7 @@ body{
     transition: 0.2s all linear;
 }
 .options button:hover{
-    background-color: peachpuff;
+    background-color: #FF5733 ;
     border: 1px solid darkcyan;
 }
 @keyframes shakeComputer {
